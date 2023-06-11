@@ -1,0 +1,6 @@
+:is(.person, .mail) {
+    float: right;
+  width: 1.5rem;
+  font-weight: bold;
+  color: white;
+}

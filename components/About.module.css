@@ -1,0 +1,44 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/-1;
+  padding: 50pxpx;
+}
+.videoContainer {
+  grid-column: 1/2;
+}
+.videoContainer img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.aboutScript {
+  grid-column: 2/3;
+  /* background-color: rgb(172, 121, 58); */
+  padding: 15px;
+}
+.aboutScript h1 {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 45px;
+  font-weight: 700;
+  color: #454545;
+  font-family: "Nunito", sans-serif;
+}
+.aboutScript p {
+  margin: 0;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .videoContainer {
+    grid-column: 1/-1;
+  }
+  .aboutScript {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 15px;
+  }
+}

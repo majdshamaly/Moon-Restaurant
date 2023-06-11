@@ -1,0 +1,157 @@
+#__next {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* grid-template-rows: 400px auto 200px; */
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../public/img/page-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.logo {
+  grid-column: 2/4;
+  padding-top: 5px;
+  justify-self: start;
+  color: #fbaf32;
+  margin: 0;
+  color: #fbaf32;
+  font-size: 2.5rem;
+  /* line-height: 0px; */
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  transition: 0.5s;
+}
+.logo a {
+  text-decoration: none;
+  color: #fbaf32;
+}
+.logo span {
+  text-decoration: none;
+  color: #719a0a;
+}
+
+.navMenu {
+  padding: 18px;
+  justify-self: center;
+  grid-column: 6/10;
+}
+.navMenu a {
+  padding: 10px 10px 8px 10px;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column: 3/9;
+  place-items: center;
+  margin: auto;
+  color: #fbaf32;
+
+  font-family: "Nunito", sans-serif;
+}
+.title h1 {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: "Nunito", sans-serif;
+}
+.title h1 span {
+  color: #fbaf32;
+}
+.title p {
+  grid-column: 1/-1;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+.title button {
+  justify-self: center;
+  padding: 12px 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-align: center;
+  cursor: pointer;
+}
+.title button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.viewMenu {
+  background: #fbaf32;
+  border: 2px solid #fbaf32;
+  grid-column: 3/4;
+  justify-self: center;
+  margin-right: 0.3rem;
+}
+.bookTable {
+  grid-column: 4/5;
+  justify-self: center;
+  background-color: #719a0a;
+  border: 2px solid #719a0a;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+      url(../public/img/fried-chicken.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .logo {
+    /* grid-column: 2/4; */
+    /* padding-top: 5px; */
+    /* justify-self: start; */
+    /* color: #fbaf32; */
+    /* margin: 0; */
+    /* color: #fbaf32; */
+    font-size: 1rem;
+    /* line-height: 0px; */
+    font-weight: 400;
+    /* font-family: "Nunito", sans-serif; */
+    transition: 0.5s;
+  }
+  .navMenu {
+    display: none;
+    /* background-color: rgba(0, 0, 0, 0.185);
+    padding: 10px;
+    justify-self: end;
+    grid-column: 8/-1;
+    width: 100%; */
+    
+  }
+  .navMenu a {
+    padding: 5px 3px 10px 5px;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+
+  }
+}
+

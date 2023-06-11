@@ -1,0 +1,111 @@
+/* Main */
+.main {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1fr;
+  background-color: #f5f5f5;
+  padding: 100px;
+  padding-bottom: 0;
+}
+.main h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: start;
+  margin: 0;
+  padding: 15px;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #454545;
+  font-family: "Nunito", sans-serif;
+  padding: 0 50px;
+  padding-bottom: 20px;
+}
+.main p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: start;
+  align-self: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0 50px;
+}
+
+/* form */
+.bookingForm {
+  width: 100%;
+  background-color: #fbaf32;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  align-self: start;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  padding: 25px;
+}
+
+.person {
+  padding: 15px;
+  margin: 5px;
+  border: 2px solid #f5f5f5;
+  margin: 10px;
+  border-radius: 5px;
+}
+:is(.person) :is(input, button) {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+.person input:focus {
+  outline: none;
+}
+.person input::placeholder {
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  #about > h1:nth-child(1){
+    margin: 5px 0;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr auto;
+    padding: 25px;
+  }
+  .main h1 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    justify-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #454545;
+  }
+  .main p {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    /* justify-self: start;
+    align-self: center; */
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 15px;
+  }
+  .bookingForm {
+    width: 100%;
+    background-color: #fbaf32;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: start;
+    margin: 0;
+    
+  }
+}

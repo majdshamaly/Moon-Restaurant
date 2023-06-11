@@ -1,0 +1,37 @@
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.25s;
+}
+.sidebar-backdrop.show {
+  opacity: 0.6;
+  z-index: 1;
+}
+#sidebar {
+  position: fixed;
+  min-width: 270px;
+  max-width: 270px;
+  left: -270px;
+  height: 100%;
+  transition: 0.25s;
+  z-index: 2;
+}
+#sidebar.show {
+  left: 0;
+}
+#main button {
+  display: inline;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar-backdrop {
+    display: block;
+  }
+}
